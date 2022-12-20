@@ -1,0 +1,41 @@
+Source: ruby-yajl
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Team <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>,
+           Per Andersson <avtobiff@gmail.com>,
+           Balasankar C <balasankarc@autistici.org>
+Build-Depends: debhelper-compat (= 13),
+               gem2deb (>= 1.0~),
+               ruby-rspec
+Standards-Version: 4.5.0
+Vcs-Git: https://salsa.debian.org/ruby-team/ruby-yajl.git
+Vcs-Browser: https://salsa.debian.org/ruby-team/ruby-yajl
+Homepage: https://github.com/brianmario/yajl-ruby
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+Rules-Requires-Root: no
+
+Package: ruby-yajl
+Architecture: any
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Replaces: libyajl-ruby
+Conflicts: libyajl-ruby
+Description: Ruby interface to Yajl, a JSON stream-based parser library
+ Supported features include,
+ .
+ JSON parsing and encoding directly to and from an IO stream
+ (file, socket, etc) or String. Compressed stream parsing and
+ encoding supported for Bzip2, Gzip and Deflate.
+ .
+ Parse and encode *multiple* JSON objects to and from streams or strings
+ continuously.
+ .
+ JSON gem compatibility API - allows yajl-ruby to be used as a drop-in
+ replacement for the JSON gem
+ .
+ Basic HTTP client (only GET requests supported for now) which parses JSON
+ directly off the response body *as it's being received*

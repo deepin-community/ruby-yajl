@@ -1,0 +1,148 @@
+ruby-yajl (1.4.1-deepin1) unstable; urgency=medium
+
+  * Rebuild
+
+ -- Deepin Packages Builder <packages@deepin.org>  Fri, 11 Nov 2022 18:05:14 +0800
+
+ruby-yajl (1.4.1-1) unstable; urgency=medium
+
+  * Team Upload
+  * New upstream version 1.4.1
+  * Fixing Lintian complaints
+     - Bumps debhelper-compat version to 13
+     - Added Rules-Requires-Root: no
+
+ -- Abraham Raji <avronr@tuta.io>  Sun, 06 Sep 2020 13:56:09 +0000
+
+ruby-yajl (1.3.1-2) unstable; urgency=medium
+
+  [ Utkarsh Gupta ]
+  * Add salsa-ci.yml
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Use secure copyright file specification URI.
+  * Use secure URI in debian/watch.
+  * Use secure URI in Homepage field.
+  * Bump debhelper from old 10 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Update Vcs-* headers from URL redirect.
+  * Use canonical URL in Vcs-Git.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+  [ Sruthi Chandran ]
+  * Update minimum version of gem2deb to 1.0
+
+  [ Pirate Praveen ]
+  * Move debian/watch to gemwatch.debian.net
+  * Bump Standards-Version to 4.5.0 (no changes needed)
+  * Update my email address
+  * Add Testsuite: autopkgtest-pkg-ruby
+
+ -- Pirate Praveen <praveen@debian.org>  Fri, 17 Jul 2020 00:33:06 +0530
+
+ruby-yajl (1.3.1-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Cédric Boutillier ]
+  * Imported Upstream version 1.2.0
+  * Bump debhelper compatibility level to 9
+  * Remove version in the gem2deb build-dependency
+  * Use https:// in Vcs-* fields
+  * Use https:// in Vcs-* fields
+  * Bump Standards-Version to 3.9.7 (no changes needed)
+  * Run wrap-and-sort on packaging files
+
+  [ Antonio Terceiro ]
+  * Remove myself from Uploaders:
+
+  [ Lucas Kanashiro ]
+  * New upstream version 1.3.1
+  * Bump debhelper compatibility level to 10
+  * Declare compliance with Debian Policy 4.1.3
+  * Drop unneeded patches
+  * debian/ruby-tests.rb: use gem2deb spectask
+
+ -- Lucas Kanashiro <kanashiro@debian.org>  Fri, 02 Feb 2018 14:04:45 -0200
+
+ruby-yajl (1.2.0-3) unstable; urgency=medium
+
+  [ Balasankar C ]
+  * Team upload
+  * Fix FTBFS by patching tests to support new versions of RSpec and mocks
+    (Closes: #791775)
+  * Add myself to Uploaders
+
+  [ Christian Hofstaedtler ]
+  * Set Standards-Version to 3.9.6 (no addtl. changes)
+
+ -- Christian Hofstaedtler <zeha@debian.org>  Wed, 08 Jul 2015 16:51:20 +0200
+
+ruby-yajl (1.2.0-2) unstable; urgency=medium
+
+  * Build against gem2deb >= 0.7.5~
+    + Drop support for ruby 1.9
+
+ -- Per Andersson <avtobiff@gmail.com>  Mon, 07 Apr 2014 01:19:07 +0200
+
+ruby-yajl (1.2.0-1) unstable; urgency=medium
+
+  * Team upload
+  * Imported Upstream version 1.2.0
+  * debian/control:
+    + remove obsolete DM-Upload-Allowed flag
+    + use canonical URI in Vcs-* fields
+    + bump Standards-Version: to 3.9.5 (no changes needed)
+    + build against gem2deb >= 0.5 to add support for Ruby2.0 and drop support
+      for Ruby1.8
+  * Require rspec/autorun in ruby-tests.rb to really run the tests
+
+ -- Cédric Boutillier <boutil@debian.org>  Thu, 19 Dec 2013 16:03:30 +0100
+
+ruby-yajl (1.1.0-2) unstable; urgency=low
+
+  * Add Conflicts and Replaces on libyajl-ruby for the benefit of users of
+    third-party repositories.  Closes: #705261
+
+ -- Tollef Fog Heen <tfheen@debian.org>  Fri, 12 Apr 2013 09:32:05 +0200
+
+ruby-yajl (1.1.0-1) unstable; urgency=low
+
+  * New upstream version.
+  * Add myself to uploaders.
+  * debian/copyright: use copyright format 1.0 uri.
+  * Remove 001-encoding-spec-upstream-fix.patch
+    - Merged upstream
+  * Bumped standards version to 3.9.3 (no changes needed).
+  * Build depend on gem2deb >= 0.3.0.
+
+ -- Per Andersson <avtobiff@gmail.com>  Sat, 23 Jun 2012 23:08:32 +0200
+
+ruby-yajl (1.0.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * Remove 0001-Fix-installation-path-of-native-extension.patch
+    - merged upstream
+  * Add 001-encoding-spec-upstream-fix.patch to fix test failures.
+  * Change ruby-yajl.docs to README.md from README.rdoc
+  * Install CHANGELOG.md as upstream changelog.
+  * Expand curly brace in debian/copyright
+    to follow dep5 simplified glob syntax.
+
+ -- Praveen Arimbrathodiyil <pravi.a@gmail.com>  Thu, 22 Sep 2011 00:07:45 +0530
+
+ruby-yajl (0.8.3-2) unstable; urgency=low
+
+  * Add myself to Uploaders
+  * Add missing Build-Depends on ruby-rspec (Closes: #640744)
+
+ -- Antonio Terceiro <terceiro@debian.org>  Wed, 07 Sep 2011 11:21:23 -0700
+
+ruby-yajl (0.8.3-1) unstable; urgency=low
+
+  * Initial release (Closes: #639792)
+  * 0001-Fix-installation-path-of-native-extension.patch by Antonio Terceiro
+
+ -- Praveen Arimbrathodiyil <pravi.a@gmail.com>  Tue, 30 Aug 2011 22:17:07 +0530
